@@ -5,10 +5,14 @@
     <title>PHP For Beginners</title>
 </head>
 <body>
+
     <h1>
-        <?php 
-            echo "Hello Word!";
+        <?php
+            $greeting = "Hello";
+
+            echo "$greeting Everybody!"
         ?>
     </h1>
+
 </body>
 </html>

@@ -24,7 +24,7 @@
                                     required>
                             </div>
                             @error('title')
-                            <p class="text-xs text-red-500 font-semibold mt-5">{{ $message }}</p>
+                            <p class="text-xs text-red-500 font-semibold mt-2">{{ $message }}</p>
                             @enderror
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                                     required>
                             </div>
                             @error('salary')
-                            <p class="text-xs text-red-500 font-semibold mt-5">{{ $message }}</p>
+                            <p class="text-xs text-red-500 font-semibold mt-2">{{ $message }}</p>
                             @enderror
                         </div>
                     </div>

@@ -32,6 +32,13 @@
                             <x-nav-link href="/login" :active="request()->is('login')">Log In</x-nav-link>
                             <x-nav-link href="/register" :active="request()->is('register')">Register</x-nav-link>
                             @endguest
+
+                            @auth
+                            <form method="POST" action="/logout">
+                                @csrf
+                                <x-form-button>Log Out</x-form-button>
+                            </form>
+                            @endauth
                         </div>
                     </div>
                     <div class="-mr-2 flex md:hidden">
@@ -60,13 +67,13 @@
                     <x-nav-link href="/jobs" :active="request()->is('jobs')">Jobs</x-nav-link>
                     <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
                 </div>
-                <div class="border-t border-gray-700 pb-3 pt-4">
+                <!-- <div class="border-t border-gray-700 pb-3 pt-4">
                     <div class="flex items-center px-5">
                         <div class="flex-shrink-0">
                             <img class="h-10 w-10 rounded-full" src="https://laracasts.com/images/lary-ai-face.svg" alt="">
                         </div>
                         <div class="ml-3">
-                            <div class="text-base font-medium leading-none text-white">Lary Robot</div>
+                            <div class="text-base font-medium leading-none text-white">Nathaniel James Gil</div>
                             <div class="text-sm font-medium leading-none text-gray-400">gilnathanieljames@gmail.com</div>
                         </div>
                         <button type="button" class="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
@@ -77,7 +84,7 @@
                             </svg>
                         </button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </nav>
 
